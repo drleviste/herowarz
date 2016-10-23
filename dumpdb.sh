@@ -1,2 +1,2 @@
 #!/bin/bash
-mysqldump -u wpuser -p wordpressdb >wordpressdb.sql
+mysqldump -u wpuser -pmothernewcrazyleaveearn wordpressdb >wordpressdb.sql
