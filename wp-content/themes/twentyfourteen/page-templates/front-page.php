@@ -12,7 +12,8 @@ get_header( 'frontpage' );
 
 <div id="main-content" class="main-content">
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main" style="margin-left:0px">
+		<!-- <div id="content" class="site-content" role="main" style="margin-left:0px"> -->
+		<div id="content" class="site-content" role="main">
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -30,3 +31,6 @@ get_header( 'frontpage' );
 	</div><!-- #primary -->
 </div><!-- #main-content -->
 
+<?php
+	// get_footer('navbar');
+?>

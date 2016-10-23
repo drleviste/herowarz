@@ -17,6 +17,8 @@ get_header('frontpage'); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
+				<!-- <div> -->
+				<!-- <img class="alignleft size-medium wp-image-6" src="/wp-content/uploads/2016/10/btn-announcement.png" alt="btn-announcement" /> -->
 				<h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
 
 				<?php
@@ -26,6 +28,7 @@ get_header('frontpage'); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
+				<!-- </div> -->
 			</header><!-- .archive-header -->
 
 			<?php
@@ -55,5 +58,5 @@ get_header('frontpage'); ?>
 <?php
 //get_sidebar( 'content' );
 //get_sidebar();
-get_footer();
+get_footer('navbar');
 ?>

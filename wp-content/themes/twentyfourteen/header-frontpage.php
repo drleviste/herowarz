@@ -31,7 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed" style="max-width:100%; background: #fff; position: relative;">
+<div id="page" class="hfeed site">
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
