@@ -17,9 +17,16 @@ get_header('frontpage'); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<!-- <div> -->
-				<!-- <img class="alignleft size-medium wp-image-6" src="/wp-content/uploads/2016/10/btn-announcement.png" alt="btn-announcement" /> -->
-				<h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+<!--
+                <section style="display: flex;">
+				<div><img class="alignnone size-full wp-image-6" style="flex: 0 0 65%;" src="/wp-content/uploads/2016/10/btn-announcement.png" alt="btn-announcement" /></div>
+				<div><h1 class="archive-title" style="flex: 1;"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1></div>
+                </section>
+-->
+                <section class="title-header">
+				<div class="title-header-left"><img class="alignnone size-full wp-image-6" src="/wp-content/uploads/2016/10/btn-announcement.png" alt="btn-announcement" /></div>
+				<div class="title-header-right><h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1></div>
+                </section>
 
 				<?php
 					// Show an optional term description.
@@ -28,9 +35,8 @@ get_header('frontpage'); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
-				<!-- </div> -->
+				
 			</header><!-- .archive-header -->
-
 			<?php
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
