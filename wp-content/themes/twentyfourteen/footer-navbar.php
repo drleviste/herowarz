@@ -13,7 +13,7 @@
 		</div><!-- #main -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div style="padding: 5px;">
+			<div style="padding: 5px; height: 5vh;">
 			<!-- <div style="padding: 5px;"> -->
 				<?php previous_post_link('%link', '<img src="/wp-content/uploads/2016/10/btn-left.png" style="float: left; height: 5vh; padding-bottom: 5px;"/>', TRUE); ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/wp-content/uploads/2016/10/btn-home.png" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 5vh;" /></a>

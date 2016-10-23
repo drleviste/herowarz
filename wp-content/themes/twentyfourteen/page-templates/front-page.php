@@ -32,5 +32,5 @@ get_header( 'frontpage' );
 </div><!-- #main-content -->
 
 <?php
-	// get_footer('navbar');
+	get_footer('navbar');
 ?>
