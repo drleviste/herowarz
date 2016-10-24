@@ -9,7 +9,7 @@
  * @since Twenty Fourteen 1.0
  */
 
-get_header('frontpage'); ?>
+get_header('allpages'); ?>
 
 	<section id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">

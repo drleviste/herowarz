@@ -30,7 +30,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> style="background: url(/wp-content/uploads/2016/10/bg-tablet.jpg); background-size: 100% 100%; background-repeat: no-repeat;">
+<body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php if ( get_header_image() ) : ?>
 	<div id="site-header">

@@ -15,7 +15,7 @@
 		the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
 	?>
 
-	<div class="entry-content">
+	<div class="entry-content" style="margin: 0 auto; max-width: 100%;">
 		<?php
 			the_content();
 			wp_link_pages( array(

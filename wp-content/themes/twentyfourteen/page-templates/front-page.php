@@ -7,7 +7,7 @@
  * @since Twenty Fourteen 1.0
  */
 
-get_header( 'frontpage' );
+get_header('frontpage');
 ?>
 
 <div id="main-content" class="main-content">

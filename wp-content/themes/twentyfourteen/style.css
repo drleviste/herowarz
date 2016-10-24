@@ -820,7 +820,8 @@ span + .edit-link:before,
  */
 
 .site {
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background-color: transparent;
 	max-width: 100%;
 	position: relative;
 }
@@ -1254,7 +1255,8 @@ a.post-thumbnail:hover {
 .site-content .entry-content,
 .site-content .entry-summary,
 .page-content {
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background-color: transparent;
 	padding: 12px 10px 0;
 }
 
@@ -4382,4 +4384,60 @@ a.post-thumbnail:hover {
 
 .title-header-right {
     flex: 1;
+}
+
+/*.home {
+	background: url("/wp-content/uploads/2016/10/bg-tablet.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}*/
+
+/*.span_1_of_3 {
+    width: 33.33%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 0;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.group {
+    zoom: 1;
+}
+.content {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+*/
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.column {
+	display: table-cell;
+    width: 32%;
+    width: -webkit-calc(33.3% - 4px);
+    width: calc(33.3% - 4px);
+}
+
+.row {
+	display: table-row;
+	width: 100%;
 }
