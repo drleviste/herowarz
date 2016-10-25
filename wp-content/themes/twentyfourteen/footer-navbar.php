@@ -12,7 +12,7 @@
 
 		</div><!-- #main -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo" style="width:100%; position: fixed; bottom: 0px;">
 			<div style="padding: 5px; height: 5vh;">
 			<!-- <div style="padding: 5px;"> -->
 				<?php previous_post_link('%link', '<img src="/wp-content/uploads/2016/10/btn-left.png" style="float: left; height: 5vh; padding-bottom: 5px;"/>', TRUE); ?>
