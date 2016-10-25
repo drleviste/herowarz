@@ -11,13 +11,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php twentyfourteen_post_thumbnail(); ?>
 
 	<header class="entry-header">
+        <section class="title-header">
+        <div class="title-header-left-small">
+    	<?php twentyfourteen_post_thumbnail(); ?>
+        </div>
+        <div class="title-header-right">
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
-		<!-- <div class="entry-meta">
-			<span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'twentyfourteen' ) ); ?></span>
-		</div> -->
 		<?php
 			endif;
 
@@ -42,6 +43,10 @@
 				edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
 			?>
 		</div><!-- .entry-meta -->
+
+        </div>
+        </section>
+
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : ?>

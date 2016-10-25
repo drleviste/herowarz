@@ -17,8 +17,10 @@ get_header('frontpage'); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
-
+                <section class="title-header">
+                <div class="title-header-left"><img class="alignnone size-full wp-image-10" src="/wp-content/uploads/2016/10/btn-update.png" alt="btn-update" width="152" height="158" /></div>
+				<div class="title-header-right"><h1 class="archive-title" ><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1></div>
+                </section>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
